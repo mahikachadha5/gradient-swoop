@@ -410,9 +410,13 @@ export default function GradientSwoop(props: GradientSwoopProps) {
     }
 
     let rafId: number
-    const start = performance.now()
-    const loop = () => { rafId = requestAnimationFrame(loop); draw(performance.now() - start) }
-    rafId = requestAnimationFrame(loop)
+    if (animationSpeed === 0) {
+      rafId = requestAnimationFrame(() => draw(0))
+    } else {
+      const start = performance.now()
+      const loop = () => { rafId = requestAnimationFrame(loop); draw(performance.now() - start) }
+      rafId = requestAnimationFrame(loop)
+    }
     return () => cancelAnimationFrame(rafId)
   }, [colors, path, direction, curve, size, taper, animationIntensity, animationSpeed, glow])
 
