@@ -1,18 +1,28 @@
 {
   "name": "gradient-swoop",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Animated bezier gradient swoop component for React",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "build:lib": "tsup src/index.ts --format esm,cjs --dts --external react --tsconfig tsconfig.lib.json"
   },
-  "keywords": ["gradient", "animation", "react", "canvas", "background", "swoop", "bezier"],
+  "keywords": [
+    "gradient",
+    "animation",
+    "react",
+    "canvas",
+    "background",
+    "swoop",
+    "bezier"
+  ],
   "peerDependencies": {
     "react": ">=17",
     "react-dom": ">=17"
