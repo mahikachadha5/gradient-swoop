@@ -204,7 +204,17 @@ export default function Home() {
           className="absolute top-0 right-0 w-1 h-full cursor-col-resize hover:bg-violet-500/40 transition-colors"
         />
 
-          <p className="text-white text-xs font-medium pt-1">gradient-swoop</p>
+          <div className="pt-1 space-y-1">
+            <p className="text-white text-xs font-medium">gradient-swoop</p>
+            <a
+              href="https://www.npmjs.com/package/gradient-swoop"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-zinc-500 text-xs hover:text-zinc-300 transition-colors"
+            >
+              Install the npm package →
+            </a>
+          </div>
 
           {/* Direction */}
           <div className="space-y-1.5">
