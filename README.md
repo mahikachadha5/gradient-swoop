@@ -2,6 +2,8 @@
 
 Animated bezier gradient ribbon for React. Drop it in as a wrapper, children render above it.
 
+**[Try the playground →](https://gradient-swoop.vercel.app)**
+
 ## Install
 
 ```bash
